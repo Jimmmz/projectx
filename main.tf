@@ -4,6 +4,17 @@ provider "aws" {
   #   alias   = "twoseven"
 }
 
+terraform {
+  backend "remote" {
+    organization = "MojoSoft"
+
+    workspaces {
+      name = "projectx"
+    }
+  }
+}
+
+
 module "db" {
   source = "./db"
   dbname = "dbserver"
