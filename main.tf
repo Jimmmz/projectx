@@ -105,7 +105,7 @@ output "SG_name" {
 locals {
   common_tags = {
     Name  = "JStewart"
-    owner = "jstewart@hashicorp.com"
+    Owner = "jstewart@hashicorp.com"
   }
 }
 
